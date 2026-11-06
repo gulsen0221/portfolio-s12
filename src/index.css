@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #4731d3;
+  --color-primary-strong: #3730a3;
+  --color-primary-soft: #eeebff;
+  --color-ink: #1f2937;
+  --color-muted: #6b7280;
+  --color-mail: #af0c48;
+  --color-accent: #cbf281;
+  --color-dark-bg: #252128;
+  --color-dark-card: #2b2727;
+}
+
+html {
+  scroll-behavior: smooth;
+}
