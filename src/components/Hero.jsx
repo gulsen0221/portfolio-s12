@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
       </div>
       <img
-        src="/images/profile.jpg"
+        src="/images/hero.png"
         alt={hero.name}
         className="w-full max-w-sm aspect-4/3 object-cover rounded-2xl shadow-2xl"
       />
