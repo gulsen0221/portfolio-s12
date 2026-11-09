@@ -1,45 +1,35 @@
-const icon = (name, file = `${name}-original`) =>
-  `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${name}/${file}.svg`;
-
-const skillList = [
-  { name: "HTML", image: icon("html5") },
-  { name: "CSS", image: icon("css3") },
-  { name: "JavaScript", image: icon("javascript") },
-  { name: "React", image: icon("react") },
-  { name: "Node.js", image: icon("nodejs") },
-  { name: "PHP", image: icon("php") },
-  { name: "MySQL", image: icon("mysql") },
-  { name: "Git", image: icon("git") },
-  { name: "Figma", image: icon("figma") },
-];
-
 const links = {
   email: "gulsenhatunsimsek@gmail.com",
   github: "https://github.com/gulsen0221",
   linkedin: "https://www.linkedin.com/in/gulsen-simsek/",
+  website: "https://ghsyazilim.com",
 };
-
+ 
 export const data = {
   tr: {
     header: {
-      switchLang: "ENGLISH'E GEÇ",
       darkMode: "KARANLIK MOD",
       lightMode: "AYDINLIK MOD",
-      nav: ["Yetenekler", "Projeler", "İletişim"],
+      nav: ["Yetenekler", "Projeler", "İşe Al"],
     },
     hero: {
-      greeting: "Merhaba! 👋",
-      title: "Ben Gülsen. Full-stack geliştiriciyim.",
+      name: "Gülsen Şimşek",
+      title: ["Fikirden ürüne", "uçtan uca geliştirici"],
+      hireMe: "İşe Al",
       description:
         "Arayüzden veritabanına, uçtan uca web siteleri ve yazılımlar geliştiriyorum. Burada üzerinde çalıştığım projeleri bulabilirsin.",
     },
     skills: {
       title: "Yetenekler",
-      list: skillList,
+      list: [
+        { name: "JavaScript", description: "Modern JavaScript ile dinamik ve etkileşimli arayüzler geliştiriyorum." },
+        { name: "React", description: "Bileşen tabanlı, Context ve hook'larla yönetilen uygulamalar kuruyorum." },
+        { name: "Node.js", description: "Sunucu tarafında API'ler ve veritabanı bağlantıları geliştiriyorum." },
+      ],
     },
     profile: {
       title: "Profil",
-      basicTitle: "Temel Bilgiler",
+      basicTitle: "Profil",
       info: [
         { label: "Eğitim", value: "Başkent Üniversitesi, Yönetim Bilişim Sistemleri" },
         { label: "Tercih Ettiği Rol", value: "Full-stack Geliştirici" },
@@ -48,7 +38,7 @@ export const data = {
       aboutTitle: "Hakkımda",
       about: [
         "Başkent Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. Bu sayede bir yazılıma yalnızca teknik açıdan değil, çözmesi gereken iş problemi açısından da bakıyorum.",
-        "Bugün bir şirketin yazılımını sıfırdan geliştiriyor, serbest çalışan olarak da müşterilerime web siteleri hazırlıyorum. Bir fikri bir ürüne dönüştürmeyi seviyorum.",
+        "Bugün bir şirketin yazılımını sıfırdan geliştiriyor, serbest çalışan olarak da müşterilerime web siteleri hazırlıyorum. En çok sevdiğim şey, bir fikri alıp çalışan bir ürüne dönüştürmek.",
       ],
     },
     projects: {
@@ -79,30 +69,35 @@ export const data = {
     },
     footer: {
       title: "Bir sonraki projen üzerinde birlikte çalışalım.",
+      websiteLabel: "Web Sitem",
       ...links,
     },
   },
-
+ 
   en: {
     header: {
-      switchLang: "TÜRKÇE'YE GEÇ",
       darkMode: "DARK MODE",
       lightMode: "LIGHT MODE",
-      nav: ["Skills", "Projects", "Contact"],
+      nav: ["Skills", "Projects", "Hire me"],
     },
     hero: {
-      greeting: "Hi! 👋",
-      title: "I'm Gülsen. I'm a full-stack developer.",
+      name: "Gülsen Şimşek",
+      title: ["From idea to product", "end-to-end developer"],
+      hireMe: "Hire me",
       description:
         "From interface to database, I build websites and software end to end. Here you can find the projects I've been working on.",
     },
     skills: {
       title: "Skills",
-      list: skillList,
+      list: [
+        { name: "JavaScript", description: "I build dynamic, interactive interfaces with modern JavaScript." },
+        { name: "React", description: "I build component-based apps managed with Context and hooks." },
+        { name: "Node.js", description: "I develop server-side APIs and database connections." },
+      ],
     },
     profile: {
       title: "Profile",
-      basicTitle: "Basic Information",
+      basicTitle: "Profile",
       info: [
         { label: "Education", value: "Başkent University, Management Information Systems" },
         { label: "Preferred Role", value: "Full-stack Developer" },
@@ -142,7 +137,9 @@ export const data = {
     },
     footer: {
       title: "Let's work together on your next project.",
+      websiteLabel: "My Website",
       ...links,
     },
   },
 };
+ 

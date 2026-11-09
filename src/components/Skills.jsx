@@ -5,20 +5,18 @@ export default function Skills() {
 
   return (
     <section id="skills" className="max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-4xl font-semibold text-gray-800 dark:text-white mb-10">
+      <h2 className="text-5xl font-semibold text-ink dark:text-white mb-6">
         {skills.title}
       </h2>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
+      <ul className="grid md:grid-cols-3 gap-10">
         {skills.list.map((skill) => (
-          <li key={skill.name} className="flex flex-col items-center gap-3">
-            <img
-              src={skill.image}
-              alt=""
-              className="w-24 h-24 rounded-lg object-contain"
-            />
-            <span className="uppercase text-gray-500 dark:text-gray-300">
+          <li key={skill.name}>
+            <h3 className="text-3xl text-primary dark:text-accent mb-4">
               {skill.name}
-            </span>
+            </h3>
+            <p className="text-sm text-muted dark:text-gray-300 max-w-xs">
+              {skill.description}
+            </p>
           </li>
         ))}
       </ul>
